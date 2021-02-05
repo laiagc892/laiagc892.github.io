@@ -1,0 +1,15 @@
+// COLORS
+// $backgColor: rgba(162, 214, 40, 1);
+$backgColor: rgba(145, 174, 0, 1);
+$transpColor: rgba(255, 255, 255, 0);
+$lightColor: white;
+$textSize_S: 1em;
+$textSize_M: 2em;
+$textSize_L: 3em;
+
+// FONTS
+// Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$primFont: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+$dispFont: 'Roboto Mono', monospace;

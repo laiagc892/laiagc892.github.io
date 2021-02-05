@@ -1,0 +1,16 @@
+// Aplicacions generals:
+@mixin textCenter{
+    text-align: center;
+}
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    }
+@mixin flexJustAli($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    }
+// -------------------------------------------------------------

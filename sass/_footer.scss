@@ -1,0 +1,19 @@
+footer{
+    width: 100vw;
+    height: 200px;
+    background-color: $backgColor;
+    h3{
+        @include textCenter();
+        color: $lightColor;
+        font-family: $dispFont;
+        font-size: $textSize_L;
+        padding: 20px;
+    }
+    p{
+        @include textCenter();
+        color: $lightColor;
+        font-family: $primFont;
+        font-size: $textSize_S;
+        padding: 10px;
+    }
+}

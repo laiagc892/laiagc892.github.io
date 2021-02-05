@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+main {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+main .colorCover {
+  background-color: #91ae00;
+  height: calc(100vh - 250px);
+}
+
+main header nav {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+main .presentation {
+  width: 800px;
+  margin: auto;
+}
+
+main .presentation h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 100px;
+  left: 380px;
+}
+
+main .presentation .me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .presentation .me p {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 1em;
+  padding: 20px;
+}
+
+main .presentation .me .presImg {
+  max-width: 350px;
+  margin: 10px;
+}
+
+main .areaChange {
+  display: block;
+  position: relative;
+  height: 200px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(145, 174, 0, 1)" d="M 0 150 C 478.5 150 478.5 197 957 197 L 957 197 L 957 0 L 0 0 Z"></path> <path fill="rgba(145, 174, 0, 1)" d="M 956 197 C 1438 197 1438 0 1920 0 L 1920 0 L 1920 0 L 956 0 Z"></path> </svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1919px) {
+  main .areaChange {
+    background-size: contain;
+  }
+}
+
+main .backFix {
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+main .backFix .backImg {
+  width: 100%;
+}
+
+footer {
+  width: 100vw;
+  height: 200px;
+  background-color: #91ae00;
+}
+
+footer h3 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #bfd6d6;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1b8585;
+  border-radius: .4rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0a4d4d;
+  border-radius: .4rem;
+}
+
+section {
+  height: 100vh;
+  margin: auto;
+  padding: 70px 20px 10px;
+  scroll-snap-align: start;
+}
+/*# sourceMappingURL=style.css.map */

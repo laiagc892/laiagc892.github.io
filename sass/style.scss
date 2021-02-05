@@ -1,0 +1,57 @@
+//! SASS
+//* Arxius separats importats:
+@import "variables", "mixinFunctions"; //! Les declariacions de variables i mixins (funcions) s'han d'importar (per carregar) abans que res
+@import "mainView", "footer";
+
+//* $nomVariable: valor
+//* Nesting
+//* Mixin (function in JS) amb o sense paràmetres (depèn si posem variables dins o no)
+//* Extensions (agafa totes les propietats d’un element)
+//* Variables 2.0 (map()) (variables amb més d'una propietat dins)
+
+// ALL
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Smooth scroll:
+html {
+    scroll-behavior: smooth; 
+}
+
+// Snap scroll:
+// TODO Aplicar snap scroll aquí
+// .all{
+//     scroll-snap-type: y proximity;
+//     overflow-y: scroll;
+//     height: 100vh;
+// }
+
+// Scrollbar personalitzada
+body::-webkit-scrollbar {
+    width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+    background:  rgb(191, 214, 214);
+}
+body::-webkit-scrollbar-thumb {
+    background:  rgb(27, 133, 133);
+    border-radius: .4rem;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background:  rgb(10, 77, 77);
+    border-radius: .4rem;
+}
+
+// -------------------------------------------------------------
+// SECTIONS
+section{
+    height: 100vh;
+    // max-width: 100%;
+    margin: auto;
+    padding: 70px 20px 10px;
+    scroll-snap-align: start;
+}
+// -------------------------------------------------------------
