@@ -1,18 +1,19 @@
 footer{
     height: 200px;
-    background-color: $backgColor;
+    @include flexCenter(column);
+    background-color: $color_primGreen;
     h3{
         @include textCenter();
-        color: $lightColor;
+        color: $color_light;
         font-family: $dispFont;
         font-size: $textSize_L;
         padding: 20px;
     }
     p{
         @include textCenter();
-        color: $lightColor;
+        color: $color_light;
         font-family: $primFont;
         font-size: $textSize_S;
-        padding: 10px;
+        padding: 20px;
     }
 }

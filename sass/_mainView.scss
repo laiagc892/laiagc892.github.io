@@ -4,7 +4,7 @@ main{
     scroll-snap-align: start;
     // -------------------------------------------------------------
     .colorCover{
-        background-color: $backgColor;
+        background-color: $color_primGreen;
         height: calc(100vh - 250px);
     }
     // -------------------------------------------------------------
@@ -18,74 +18,57 @@ main{
     .presentation{
         width: 800px;
         margin: auto;
-        h1{
-            font-family: $primFont;
-            color: $lightColor;
-            font-size: $textSize_L;
-            @include textCenter();
-            padding: 20px;
-            position: relative;
-            top: 100px;
-            left: 380px;
-        }
-        .me{
-            @include flexJustAli(center, flex-end);
+        @include flexJustAli(center, flex-end);
+        .text{
+            h1{
+                font-family: $primFont;
+                color: $color_light;
+                font-size: $textSize_L;
+                @include textCenter();
+                // margin: 20px;
+                position: relative;
+                top: 100px;
+                padding-left: 300px;
+                overflow: visible;
+            }
             p{
                 font-family: $dispFont;
-                color: $lightColor;
+                color: $color_light;
                 font-size: $textSize_S;
-                padding: 20px;
-            }
-            .presImg{
-                max-width: 350px;
                 margin: 10px;
             }
+        }
+        .presImg{
+            max-width: 350px;
+            margin: 10px;
         }
     }
     // -------------------------------------------------------------
     // àrea color vectorial:
-    // svg{
-        //     fill: $backgColor;
-        // }
+    .areaChange{
+        display: block;
+        position: relative;
+        // top: -2px;
+        // bottom: -200px;
+        height: 200px;
+        background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(145, 174, 0, 1)" d="M 0 150 C 478.5 150 478.5 197 957 197 L 957 197 L 957 0 L 0 0 Z"></path> <path fill="rgba(145, 174, 0, 1)" d="M 956 197 C 1438 197 1438 0 1920 0 L 1920 0 L 1920 0 L 956 0 Z"></path> </svg>');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media (max-width:1919px) {
         .areaChange{
-            display: block;
-            position: relative;
-            // top: -2px;
-            // bottom: -200px;
-            height: 200px;
-            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(145, 174, 0, 1)" d="M 0 150 C 478.5 150 478.5 197 957 197 L 957 197 L 957 0 L 0 0 Z"></path> <path fill="rgba(145, 174, 0, 1)" d="M 956 197 C 1438 197 1438 0 1920 0 L 1920 0 L 1920 0 L 956 0 Z"></path> </svg>');
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-size: contain;
         }
-        @media (max-width:1919px) {
-            .areaChange{
-                background-size: contain;
-            }
+    }
+    // -------------------------------------------------------------
+    .backFix{
+        // width: 100vw;
+        .backImg{
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            max-width: 100%;
         }
-        // .div {
-            //     display: block;
-            //     position: relative;
-            //     top: -2px;
-            //     height: 200px;
-            //     background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(145, 174, 0, 1)" d="M 0 100 C 478.5 100 478.5 197 957 197 L 957 197 L 957 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(145, 174, 0, 1)" d="M 956 197 C 1438 197 1438 0 1920 0 L 1920 0 L 1920 0 L 956 0 Z" stroke-width="0"></path> </svg>');
-            //     background-size: cover;
-            //     background-repeat: no-repeat;
-            // }
-            // @media (max-width:1919px) {
-                //     .div {
-                    //         background-size: contain;
-                    //     }
-                    // }
-                    
-                    // -------------------------------------------------------------
-                    .backFix{
-                        width: 100vw;
-                        position: fixed;
-                        z-index: -1;
-                        top: 0;
-                        left: 0;
-                        .backImg{
-                            width: 100%;
-                        }
-                    }
-                }
+    }
+}
