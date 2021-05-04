@@ -11,7 +11,6 @@ main .colorCover {
 }
 
 main header nav {
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -30,7 +29,6 @@ main .presentation {
 }
 
 main .presentation .text h1 {
-  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 3em;
   text-align: center;
@@ -104,7 +102,6 @@ footer h3 {
 footer p {
   text-align: center;
   color: white;
-  font-family: "Roboto", sans-serif;
   font-size: 1em;
   padding: 20px;
 }
@@ -121,27 +118,7 @@ html {
 }
 
 .all {
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-.all::-webkit-scrollbar {
-  width: 0.8rem;
-}
-
-.all::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);
-}
-
-.all::-webkit-scrollbar-thumb {
-  background: #5c6e00;
-  border-radius: .4rem;
-}
-
-.all::-webkit-scrollbar-thumb:hover {
-  background: #91ae00;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
@@ -150,5 +127,9 @@ section {
   margin: auto;
   padding: 70px 20px 10px;
   scroll-snap-align: start;
+}
+
+section h1 {
+  font-family: "Roboto Mono", monospace;
 }
 /*# sourceMappingURL=style.css.map */

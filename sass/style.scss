@@ -24,23 +24,25 @@ html {
 // Snap scroll:
 // TODO Aplicar snap scroll aquí
 .all{
-    scroll-snap-type: y proximity;
-    overflow-y: scroll;
-    height: 100vh;
+    font-family: $font_roboto;
+
+    // scroll-snap-type: y proximity;
+    // overflow-y: scroll;
+    // height: 100vh;
     
-    &::-webkit-scrollbar{
-        width: 0.8rem;
-    }
-    &::-webkit-scrollbar-track{
-        background: $color_transp;
-    }
-    &::-webkit-scrollbar-thumb{
-        background: $color_darkGreen;
-        border-radius: .4rem;
-        &:hover {
-            background: $color_primGreen;
-        }
-    }
+    // &::-webkit-scrollbar{
+    //     width: 0.8rem;
+    // }
+    // &::-webkit-scrollbar-track{
+    //     background: $color_transp;
+    // }
+    // &::-webkit-scrollbar-thumb{
+    //     background: $color_darkGreen;
+    //     border-radius: .4rem;
+    //     &:hover {
+    //         background: $color_primGreen;
+    //     }
+    // }
 }
 
 // Scrollbar personalitzada
@@ -76,5 +78,8 @@ section{
     margin: auto;
     padding: 70px 20px 10px;
     scroll-snap-align: start;
+    h1{
+        font-family: $font_robotoMono;
+    }
 }
 // -------------------------------------------------------------

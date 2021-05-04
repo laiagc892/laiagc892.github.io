@@ -10,7 +10,6 @@ main{
     // -------------------------------------------------------------
     header{
         nav{
-            font-family: $primFont;
             font-weight: bold;
         }
     }
@@ -21,7 +20,6 @@ main{
         @include flexJustAli(center, flex-end);
         .text{
             h1{
-                font-family: $primFont;
                 color: $color_light;
                 font-size: $textSize_L;
                 @include textCenter();
@@ -32,7 +30,7 @@ main{
                 overflow: visible;
             }
             p{
-                font-family: $dispFont;
+                font-family: $font_robotoMono;
                 color: $color_light;
                 font-size: $textSize_S;
                 margin: 10px;

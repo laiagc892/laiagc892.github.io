@@ -5,14 +5,13 @@ footer{
     h3{
         @include textCenter();
         color: $color_light;
-        font-family: $dispFont;
+        font-family: $font_robotoMono;
         font-size: $textSize_L;
         padding: 20px;
     }
     p{
         @include textCenter();
         color: $color_light;
-        font-family: $primFont;
         font-size: $textSize_S;
         padding: 20px;
     }
